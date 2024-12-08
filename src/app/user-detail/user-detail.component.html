@@ -1,0 +1,16 @@
+<mat-card class="details-card">
+  <mat-card-title>User Details</mat-card-title>
+  <mat-card-content>
+    <div *ngIf="user; else loading" class="details-content">
+      <p><strong>Name:</strong> {{ user.name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Id:</strong> {{ user.id }}</p>
+      <div class="details-actions">
+        <button mat-stroked-button color="primary" (click)="goBack()">Back</button>
+      </div>
+    </div>
+    <ng-template #loading>
+      <p>Loading user details...</p>
+    </ng-template>
+  </mat-card-content>
+</mat-card>

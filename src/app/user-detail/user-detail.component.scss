@@ -1,0 +1,38 @@
+.details-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 16px;
+    background-color: #eae7e7; 
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+  }
+  
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #1976d2; 
+  }
+  
+  .details-content p {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+  .details-content strong {
+    color: #333;
+  }
+  
+  .details-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  button[mat-stroked-button] {
+    color: #1976d2;
+    border-color: #1976d2;
+  }
+  
