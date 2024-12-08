@@ -15,6 +15,12 @@
 </div>
 
 <label class="work-sans-users" for="mat-card">Users List ⬇️</label>
+<div >
+  <button mat-stroked-button color="primary" class="new-button" (click)="createUser()">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
+    Create New User</button>
+</div>
+
 <div class="card-container">
   <mat-card class="user-card" *ngFor="let user of users">
     <mat-card-header>
@@ -32,11 +38,7 @@
   </mat-card>
 
 </div>
-<div>
-  <button mat-stroked-button color="primary" class="new-button" (click)="createUser()">
-    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
-    Create New User</button>
-</div>
+
 
 <ng-template #noUsers>
   <p>No users available.</p>
