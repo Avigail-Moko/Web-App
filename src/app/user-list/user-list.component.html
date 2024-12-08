@@ -14,7 +14,7 @@
   </p>
 </div>
 
-<h2 class="work-sans-p-font">Users List ⬇️</h2>
+<label class="work-sans-users" for="mat-card">Users List ⬇️</label>
 <div class="card-container">
   <mat-card class="user-card" *ngFor="let user of users">
     <mat-card-header>
@@ -30,12 +30,12 @@
       <button mat-flat-button color="warn" (click)="deleteUser(user.id)">Delete</button>
     </mat-card-actions>
   </mat-card>
- 
-  <mat-card-footer>
-    <button mat-stroked-button color="primary" (click)="createUser()">
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
-      Create New User</button>
-  </mat-card-footer>
+
+</div>
+<div>
+  <button mat-stroked-button color="primary" class="new-button" (click)="createUser()">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
+    Create New User</button>
 </div>
 
 <ng-template #noUsers>
